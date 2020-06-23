@@ -1,21 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
-namespace ERestaurant.DAO.Entity
+namespace ERestaurant.Models
 {
-    public class Account
+    public class TakeOutModel
     {
         public int Id { get; set; }
-        public int RoleId { get; set; }
         public string Name { get; set; }
-        public string NickName { get; set; }
-        public string Avatar { get; set; }
         public string Address { get; set; }
         public string Phone { get; set; }
-        public string Password { get; set; }
+        public decimal Price { get; set; }
+        public string Status { get; set; }
         public DateTime CreateTime { get; set; }
+        public DateTime LastUpdatedTime { get; set; }
+
+        public List<Tuple<string, int>> FoodDic { get; set; }
     }
 }

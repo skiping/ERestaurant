@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ERestaurant.DAO.Entity
+namespace ERestaurant.DAO.Model
 {
     public class Category
     {

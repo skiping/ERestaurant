@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ERestaurant.DAO.Entity
+namespace ERestaurant.DAO.Model
 {
     public class TakeOutAndFood
     {

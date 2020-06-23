@@ -1,4 +1,4 @@
-﻿using ERestaurant.DAO.Entity;
+﻿using ERestaurant.DAO.Model;
 using Microsoft.EntityFrameworkCore;
 using System;
 
@@ -30,7 +30,7 @@ namespace ERestaurant.DAO
             modelBuilder.Entity<Food>().HasKey(x => x.Id);
             modelBuilder.Entity<Food>().Property(x => x.Name).HasMaxLength(200);
             modelBuilder.Entity<Food>().Property(x => x.Description).HasMaxLength(500);
-            modelBuilder.Entity<Food>().Property(x => x.ImgUrl).HasMaxLength(500);
+            modelBuilder.Entity<Food>().Property(x => x.Image).HasMaxLength(500);
 
             modelBuilder.Entity<TakeOut>().HasKey(x => x.Id);
 
@@ -79,7 +79,7 @@ namespace ERestaurant.DAO
                    Description = "好吃的油焖大虾，2斤一份",
                    Price = 128,
                    StockCount = 100,
-                   ImgUrl = "/upload/youmendaxie.jpg",
+                   Image = "/upload/youmendaxie.jpg",
                    CreateTime = DateTime.Now,
                    Type = "荤菜"
                });

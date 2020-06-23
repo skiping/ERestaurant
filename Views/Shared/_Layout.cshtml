@@ -7,6 +7,27 @@
     <link rel="stylesheet" href="~/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/bootstrap-responsive.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/font-awesome.css" />
+
+    <script src="~/js/vue.min.js"></script>
+    <script src="~/js/axios.min.js"></script>
+    <script src="~/js/moment.js"></script>
+    <script src="~/js/vue_filter.js"></script>
+    <script src="~/js/vue-component.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 1pc;
+            font-family: Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,WenQuanYi Micro Hei,sans-serif !important;
+            -webkit-font-smoothing: antialiased;
+            font-size: 14px;
+            line-height: 20px;
+            background-color: rgb(235, 236, 237) !important;
+            padding-top: 0px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -18,9 +39,9 @@
                     <div class="nav-collapse collapse" style="height: 0px;">
                         <ul class="nav pull-left" style="margin-right: 0px;">
                             <li class="divider-vertical"></li>
-                            <li class="dropdown"><a class="text_bnb_strong" href="">订单管理</a></li>
+                            <li class="dropdown"><a class="text_bnb_strong" href="/TakeOut/Order">外卖订单</a></li>
                             <li class="divider-vertical"></li>
-                            <li class="dropdown"><a class="text_bnb_strong" href="">菜品管理</a></li>
+                            <li class="dropdown"><a class="text_bnb_strong" href="/Food/FoodList">菜品管理</a></li>
                             <li class="divider-vertical"></li>
                             <li class="dropdown"><a class="text_bnb_strong" href="">分类管理</a></li>
                             <li class="divider-vertical"></li>
@@ -44,7 +65,7 @@
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/js/bootstrap.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>  
     @RenderSection("Scripts", required: false)
 </body>
 </html>

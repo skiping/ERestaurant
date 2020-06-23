@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ERestaurant.DAO.Entity
+namespace ERestaurant.DAO.Model
 {
     public class Food
     {
@@ -14,7 +14,7 @@ namespace ERestaurant.DAO.Entity
         public decimal Price { get; set; }
         public int StockCount { get; set; }
         public string Description { get; set; }
-        public string ImgUrl { get; set; }
+        public string Image { get; set; }
         public DateTime CreateTime { get; set; }
     }
 }
