@@ -21,6 +21,9 @@ namespace ERestaurant.Controllers
         }
         public IActionResult FoodList()
         {
+            var groups = _db.Groups.ToList();
+
+            ViewData["Groups"] = groups;
             return View();
         }
 
