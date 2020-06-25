@@ -226,7 +226,7 @@
                          return;
                      }
 
-                     axios.post(`/Login/Change?password=${this.password}&newPassword=${this.newPassword}`)
+                     axios.post(`/Login/ChangePassword?password=${this.password}&newPassword=${this.newPassword}`)
                          .then(res => {
                              if (res.data == 0) {
                                  alert("修改失败，请重试！");

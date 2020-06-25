@@ -23,6 +23,11 @@ namespace ERestaurant.DAO.Model
             return View();
         }
 
+        public IActionResult Denied()
+        {
+            return Content("您没有权限访问该页面，请联系管理员！");
+        }
+
         public IActionResult Change()
         {
             return View();
@@ -94,6 +99,7 @@ namespace ERestaurant.DAO.Model
                 return Content("0");
 
             user.Password = newPassword;
+            _db.SaveChanges();
 
             return Content("1");
         }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using ERestaurant.DAO;
 using ERestaurant.DAO.Model;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ERestaurant.Controllers
@@ -16,6 +17,7 @@ namespace ERestaurant.Controllers
             _db = dbContex;
         }
 
+        [Authorize(Roles = "1")]
         public IActionResult List()
         {
             return View();

@@ -4,6 +4,7 @@ using System.Linq;
 using ERestaurant.DAO;
 using ERestaurant.DAO.Model;
 using ERestaurant.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,6 +20,8 @@ namespace ERestaurant.Controllers
             _db = dbContex;
             _hostingEnvironment = hostingEnvironment;
         }
+
+        [Authorize(Roles = "1")]
         public IActionResult FoodList()
         {
             var groups = _db.Groups.ToList();

@@ -29,6 +29,7 @@ namespace ERestaurant
               .AddCookie(options =>
               {
                   options.LoginPath = "/Login/Index";
+                  options.AccessDeniedPath = "/Login/Denied";
               });
 
             services.AddControllersWithViews();
